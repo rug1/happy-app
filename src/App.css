@@ -1,0 +1,17 @@
+.heading {
+  padding: 34px;
+  font-weight: 400;
+}
+
+.emoji-containter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  width: 100%;
+}
+
+.emoji-containter p {
+  text-align: center;
+  font-size: 2.5em;
+}
