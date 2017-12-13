@@ -1,5 +1,5 @@
 .heading {
-  padding: 34px;
+  padding: 24px 0 0 35px;
   font-weight: 400;
 }
 
@@ -14,4 +14,8 @@
 .emoji-containter p {
   text-align: center;
   font-size: 2.5em;
+}
+
+.emoji-containter p span {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
