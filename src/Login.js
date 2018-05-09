@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import { Grid, Form, Button } from "semantic-ui-react";
+import { withRouter } from "react-router-dom";
 
 class Login extends Component {
+  handleClick = () => {
+    this.props.history.push(`${process.env.PUBLIC_URL}/step-one`);
+  };
+
   renderContent() {
     return (
       <div className="full-height">
@@ -16,7 +21,7 @@ class Login extends Component {
               <label>Password</label>
               <input type="password" />
             </Form.Field>
-            <Button primary fluid type="submit">
+            <Button primary fluid type="submit" onClick={this.handleClick}>
               Login
             </Button>
           </Form>
@@ -42,4 +47,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);
